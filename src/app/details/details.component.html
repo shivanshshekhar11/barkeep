@@ -1,0 +1,45 @@
+<section class="py-10 bg-white sm:py-16 lg:py-24" *ngIf="cocktail">
+  <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+    <div class="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
+      <h2
+        class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight"
+      >
+        {{ cocktail.name }}
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
+      <div>
+        <img
+          class="w-full mx-auto sm:max-w-xs"
+          src="{{ cocktail.imageUrl }}"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900">
+          {{ cocktail.category }}
+        </h3>
+        <p class="mt-4 text-lg text-gray-700">
+          {{ cocktail.alcoholic }}
+        </p>
+        <p class="mt-4 text-lg text-gray-700">
+          {{ cocktail.glass }}
+        </p>
+        <p class="mt-4 text-lg text-gray-700">
+          <a
+            *ngFor="let ingredient of cocktail.ingredients"
+            [routerLink]="['/ingredient', ingredient]"
+            >{{ ingredient }}</a
+          >
+        </p>
+
+        <h3 class="mt-8 text-lg font-semibold text-gray-900">Instructions</h3>
+        <p class="mt-4 text-lg text-gray-700">
+          {{ cocktail.instructions }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
