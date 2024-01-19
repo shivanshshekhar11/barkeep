@@ -1,80 +1,219 @@
-<body class="bg-gradient-to-br from-gray-900 to-black">
+<div class="bg-black">
   <div
-    class="text-gray-300 container mx-auto p-8 overflow-hidden md:rounded-lg md:p-10 lg:p-12"
+    class="text-gray-300 container mx-auto overflow-hidden md:rounded-lg px-4 sm:px-6 lg:px-8 max-w-7xl"
   >
-    <div class="h-32 md:h-40"></div>
+    <div class="h-20 lg:h-32"></div>
 
     <div class="grid gap-8 md:grid-cols-2">
       <div class="flex flex-col justify-center">
-        <h2 class="text-4xl font-bold">Barkeep</h2>
+        <h2
+          class="bg-gradient-to-r from-pink-700 via-blue-500 to-pink-300 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+        >
+          Barkeep
+        </h2>
         <div class="h-6"></div>
         <p class="font-serif text-xl text-gray-400 md:pr-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-          autem, a recusandae vero praesentium qui impedit doloremque molestias
-          necessitatibus.
+          A Cocktails and Drinks Explorer.
+        </p>
+        <p class="font-serif text-xl text-gray-400 md:pr-10 mt-2">
+          For my high-end friends who pointed out that they need an App for
+          this.
         </p>
         <div class="h-8"></div>
       </div>
       <div>
-        <div
-          class="-mr-24 rounded-lg md:rounded-l-full bg-gradient-to-br from-gray-900 to-black h-96"
-        ></div>
+        <img src="../../assets/hero.jpg" class="rounded-lg" alt="" />
       </div>
     </div>
 
     <div class="h-32 md:h-40"></div>
 
-    <p class="font-serif text-4xl">
-      <span class="text-gray-400">Lorem Ipsum</span>
-
-      <span class="text-gray-600"
-        >consectetur adipisicing elit. Consectetur atque molestiae omnis
-        excepturi enim!</span
-      >
-    </p>
+    <p class="font-serif text-4xl">What will you have this evening ...</p>
 
     <div class="h-32 md:h-40"></div>
 
-    <div class="grid gap-4 md:grid-cols-3">
+    <div class="grid gap-4 md:grid-cols-3 mb-8">
       <div
-        class="flex-col p-8 py-16 rounded-lg shadow-2xl md:p-12 bg-gradient-to-br from-gray-900 to-black"
+        class="flex-col p-8 py-16 rounded-lg shadow-2xl transition duration-200 hover:shadow-pink-700/50 border-2 border-pink-700 md:p-12 bg-gradient-to-br from-gray-900 to-black"
       >
-        <p
-          class="flex items-center justify-center text-4xl font-semibold text-green-400 bg-green-800 rounded-full shadow-lg w-14 h-14"
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="text-pink-700 h-10"
         >
-          1
-        </p>
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M20.9009 9.85L21.4909 19.74C21.5109 20.01 21.3809 20.19 21.3109 20.27C21.2309 20.36 21.0609 20.5 20.7809 20.5H18.0509L20.2109 9.85H20.9009ZM22.0009 6L21.9909 6.02C22.0109 6.26 21.9909 6.51 21.9309 6.76L14.5609 20.29C14.3209 21.3 13.4209 22 12.3809 22H20.7809C22.0709 22 23.0909 20.91 22.9909 19.62L22.0009 6Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M11.4502 2.24136C11.5502 1.84136 11.3002 1.43136 10.9002 1.33136C10.5002 1.24136 10.0902 1.48136 9.99023 1.88136L9.49023 3.95136H11.0302L11.4502 2.24136Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M18.0509 2.20859C18.1409 1.79859 17.8809 1.40859 17.4709 1.31859C17.0709 1.22859 16.6709 1.48859 16.5809 1.89859L16.1309 3.96859H17.6709L18.0509 2.20859Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M21.8198 5.33141C21.4898 4.53141 20.7098 3.96141 19.7498 3.96141H17.6698L17.1098 6.55141C17.0298 6.90141 16.7198 7.14141 16.3798 7.14141C16.3298 7.14141 16.2698 7.14141 16.2198 7.12141C15.8198 7.03141 15.5598 6.63141 15.6398 6.23141L16.1298 3.95141H11.0298L10.3998 6.55141C10.3198 6.89141 10.0098 7.12141 9.66975 7.12141C9.60975 7.12141 9.54976 7.11141 9.48975 7.10141C9.08976 7.00141 8.83975 6.60141 8.93975 6.19141L9.47975 3.94141H7.44975C6.46975 3.94141 5.59975 4.58141 5.30975 5.52141L1.09975 19.0714C0.659754 20.5214 1.72975 22.0014 3.23975 22.0014H16.3798C17.4198 22.0014 18.3198 21.3014 18.5598 20.2914L21.9298 6.76141C21.9898 6.51141 22.0098 6.26141 21.9898 6.02141C21.9698 5.78141 21.9198 5.54141 21.8198 5.33141ZM14.6998 16.7514H6.69975C6.28975 16.7514 5.94975 16.4114 5.94975 16.0014C5.94975 15.5914 6.28975 15.2514 6.69975 15.2514H14.6998C15.1098 15.2514 15.4498 15.5914 15.4498 16.0014C15.4498 16.4114 15.1098 16.7514 14.6998 16.7514ZM15.6998 12.7514H7.69975C7.28975 12.7514 6.94975 12.4114 6.94975 12.0014C6.94975 11.5914 7.28975 11.2514 7.69975 11.2514H15.6998C16.1098 11.2514 16.4498 11.5914 16.4498 12.0014C16.4498 12.4114 16.1098 12.7514 15.6998 12.7514Z"
+              fill="currentColor"
+            ></path>
+          </g>
+        </svg>
+
         <div class="h-6"></div>
-        <p class="font-serif text-3xl">Lorem Ipsum Lorem Ipsum</p>
-        <a routerLink="/list">list</a>
+        <p class="font-serif text-3xl">Pick a letter</p>
+        <form
+          class="mt-2 flex align-center"
+          (ngSubmit)="menuForm.invalid ? createAlert() : menu()"
+          #menuForm="ngForm"
+        >
+          <input
+            type="text"
+            [(ngModel)]="char"
+            name="char"
+            maxlength="1"
+            required
+            pattern="[a-zA-Z]"
+            autocomplete="off"
+            class="bg-transparent rounded-lg border-2 border-pink-700 h-10 w-10 p-2"
+          />
+          <button
+            type="submit"
+            class="bg-pink-700 rounded-lg h-10 w-10 hover:bg-pink-600 transition duration-200 ml-2"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </form>
       </div>
       <div
-        class="flex-col p-8 py-16 rounded-lg shadow-2xl md:p-12 bg-gradient-to-b from-gray-900 to-black"
+        class="flex-col p-8 py-16 rounded-lg shadow-2xl transition duration-200 hover:shadow-blue-600/50 border-2 border-blue-600 md:p-12 bg-gradient-to-br from-gray-900 to-black"
       >
-        <p
-          class="flex items-center justify-center text-4xl font-semibold text-indigo-400 bg-indigo-800 rounded-full shadow-lg w-14 h-14"
-        >
-          2
-        </p>
+        <div class="text-blue-600">
+          <svg
+            version="1.1"
+            id="_x32_"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 512 512"
+            xml:space="preserve"
+            fill="currentColor"
+            class="h-10"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <style type="text/css">
+                .st0 {
+                  fill: currentColor;
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M454.608,111.204L280.557,6.804C272.992,2.268,264.504,0,256,0c-8.507,0-16.996,2.268-24.557,6.797 L57.392,111.204c-5.346,3.203-9.916,7.37-13.555,12.192l207.902,124.707c2.622,1.575,5.896,1.575,8.518,0L468.16,123.396 C464.521,118.574,459.955,114.407,454.608,111.204z M177.16,131.738c-12.056,8.371-31.302,8.16-42.984-0.49 c-11.684-8.65-11.382-22.463,0.678-30.842c12.056-8.386,31.304-8.16,42.992,0.482C189.525,109.539,189.22,123.344,177.16,131.738z M376.303,134.126c-12.056,8.38-31.306,8.16-42.992-0.49c-11.68-8.65-11.378-22.462,0.685-30.841 c12.053-8.38,31.302-8.168,42.985,0.482C388.664,111.928,388.359,125.732,376.303,134.126z"
+                ></path>
+                <path
+                  class="st0"
+                  d="M246.136,258.366L38.004,133.523c-2.457,5.802-3.794,12.116-3.794,18.62v208.084 c0,16.773,8.801,32.311,23.182,40.946l174.051,104.392c5.828,3.496,12.203,5.629,18.714,6.435V265.464 C250.156,262.556,248.631,259.858,246.136,258.366z M75.845,369.736c-12.052-6.571-21.829-21.671-21.829-33.728 c0-12.056,9.777-16.502,21.829-9.931c12.056,6.57,21.826,21.671,21.826,33.728C97.671,371.861,87.902,376.306,75.845,369.736z M75.845,247.869c-12.052-6.578-21.829-21.678-21.829-33.728c0-12.056,9.777-16.501,21.829-9.931 c12.056,6.571,21.826,21.671,21.826,33.728C97.671,249.986,87.902,254.44,75.845,247.869z M136.779,342.014 c-12.056-6.571-21.826-21.671-21.826-33.728s9.769-16.502,21.826-9.931c12.056,6.571,21.829,21.671,21.829,33.728 C158.608,344.131,148.835,348.585,136.779,342.014z M197.716,436.158c-12.056-6.571-21.83-21.671-21.83-33.727 c0-12.049,9.773-16.495,21.83-9.924c12.056,6.57,21.826,21.67,21.826,33.72C219.541,438.284,209.772,442.729,197.716,436.158z M197.716,314.292c-12.056-6.57-21.83-21.671-21.83-33.727c0-12.056,9.773-16.502,21.83-9.931 c12.056,6.571,21.826,21.671,21.826,33.727C219.541,316.417,209.772,320.863,197.716,314.292z"
+                ></path>
+                <path
+                  class="st0"
+                  d="M473.992,133.523L265.864,258.366c-2.494,1.492-4.02,4.19-4.02,7.098V512 c6.506-0.806,12.889-2.939,18.714-6.435l174.051-104.392c14.381-8.635,23.182-24.172,23.182-40.946V152.143 C477.79,145.64,476.453,139.326,473.992,133.523z M321.232,262.932c12.053-6.571,21.826-2.125,21.826,9.931 c0,12.049-9.773,27.149-21.826,33.72c-12.06,6.571-21.83,2.125-21.83-9.924C299.402,284.604,309.172,269.503,321.232,262.932z M321.232,448.735c-12.06,6.57-21.83,2.125-21.83-9.931s9.77-27.15,21.83-33.728c12.053-6.571,21.826-2.118,21.826,9.931 C343.058,427.064,333.285,442.164,321.232,448.735z M322.536,377.663c-12.056,6.571-21.83,2.117-21.83-9.939 c0-12.048,9.773-27.149,21.83-33.72c12.056-6.57,21.826-2.125,21.826,9.931S334.592,371.085,322.536,377.663z M427.32,386.403 c-12.056,6.571-21.826,2.125-21.826-9.931c0-12.056,9.769-27.156,21.826-33.72c12.056-6.578,21.829-2.133,21.829,9.924 C449.149,364.732,439.376,379.833,427.32,386.403z M427.32,315.332c-12.056,6.563-21.826,2.125-21.826-9.931 c0-12.056,9.769-27.157,21.826-33.728c12.056-6.571,21.829-2.125,21.829,9.931C449.149,293.653,439.376,308.761,427.32,315.332z M427.32,244.253c-12.056,6.57-21.826,2.125-21.826-9.924c0-12.056,9.769-27.157,21.826-33.728 c12.056-6.571,21.829-2.125,21.829,9.931C449.149,222.582,439.376,237.682,427.32,244.253z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
         <div class="h-6"></div>
-        <p class="font-serif text-3xl">Lorem Ipsum Lorem Ipsum</p>
-        <a routerLink="/random">Random</a>
+        <p class="font-serif text-3xl">Surprise Me</p>
+        <a
+          routerLink="/random"
+          class="block bg-blue-700 rounded-lg h-10 w-10 hover:bg-blue-600 transition duration-200 mt-2"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M6 12H18M18 12L13 7M18 12L13 17"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g></svg
+        ></a>
       </div>
       <div
-        class="flex-col p-8 py-16 rounded-lg shadow-2xl md:p-12 bg-gradient-to-bl from-gray-900 to-black"
+        class="flex-col p-8 py-16 rounded-lg shadow-2xl transition duration-200 hover:shadow-amber-500/50 border-2 border-amber-500 md:p-12 bg-gradient-to-br from-gray-900 to-black"
       >
-        <p
-          class="flex items-center justify-center text-4xl font-semibold text-teal-400 bg-teal-800 rounded-full shadow-lg w-14 h-14"
-        >
-          3
-        </p>
+        <div class="text-amber-500">
+          <svg
+            fill="currentColor"
+            class="h-10"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>lens</title>
+              <path
+                d="M0 13.024q0-2.624 1.024-5.056t2.784-4.16 4.16-2.752 5.056-1.056q2.656 0 5.056 1.056t4.16 2.752 2.784 4.16 1.024 5.056q0 3.616-1.984 6.816l7.072 7.040q0.864 0.896 0.864 2.144t-0.864 2.112-2.144 0.864-2.112-0.864l-7.040-7.040q-3.2 1.952-6.816 1.952-2.656 0-5.056-1.024t-4.16-2.784-2.784-4.128-1.024-5.088zM4 13.024q0 2.464 1.216 4.544t3.296 3.264 4.512 1.216q1.824 0 3.488-0.704t2.88-1.92 1.92-2.88 0.736-3.52-0.736-3.52-1.92-2.848-2.88-1.92-3.488-0.736q-2.432 0-4.512 1.216t-3.296 3.296-1.216 4.512z"
+              ></path>
+            </g>
+          </svg>
+        </div>
         <div class="h-6"></div>
-        <p class="font-serif text-3xl">Coming soon ...</p>
+        <p class="font-serif text-3xl">Search</p>
+        <p>Coming soon ...</p>
       </div>
     </div>
-
-    <div class="h-40"></div>
-
+    <div *ngIf="alert">Enter a valid character.</div>
     <div class="h-12"></div>
   </div>
-</body>
+</div>

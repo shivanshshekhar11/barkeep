@@ -1,45 +1,56 @@
-<section class="py-10 bg-white sm:py-16 lg:py-24" *ngIf="cocktail">
-  <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-    <div class="mx-auto text-left md:max-w-lg lg:max-w-2xl md:text-center">
-      <h2
-        class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight"
-      >
-        {{ cocktail.name }}
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-1 mt-8 md:mt-20 gap-y-6 md:grid-cols-2 gap-x-10">
-      <div>
-        <img
-          class="w-full mx-auto sm:max-w-xs"
-          src="{{ cocktail.imageUrl }}"
-          alt=""
-        />
+<div class="bg-black py-16 md:py-32">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" *ngIf="cocktail">
+    <div class="flex flex-col md:flex-row -mx-4">
+      <div class="md:flex-1 px-4">
+        <div class="h-[460px] rounded-lg bg-black mb-4">
+          <img
+            class="w-full h-full object-cover"
+            src="{{ cocktail.imageUrl }}"
+            alt="Drink Image"
+          />
+        </div>
       </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-gray-900">
-          {{ cocktail.category }}
-        </h3>
-        <p class="mt-4 text-lg text-gray-700">
-          {{ cocktail.alcoholic }}
-        </p>
-        <p class="mt-4 text-lg text-gray-700">
-          {{ cocktail.glass }}
-        </p>
-        <p class="mt-4 text-lg text-gray-700">
-          <a
-            *ngFor="let ingredient of cocktail.ingredients"
-            [routerLink]="['/ingredient', ingredient]"
-            >{{ ingredient }}</a
+      <div class="md:flex-1 px-4">
+        <h2
+          class="text-3xl sm:text-5xl font-extrabold text-transparent bg-gradient-to-r from-pink-700 via-blue-500 to-pink-300 bg-clip-text mb-8 md:mb-12 mt-4 md:mt-0"
+        >
+          {{ cocktail.name }}
+        </h2>
+        <div class="mb-4">
+          <span class="text-blue-400 text-lg"> {{ cocktail.category }}</span>
+        </div>
+        <div class="mb-4">
+          <span class="text-lg text-gray-200">Served in </span>
+          <span class="text-pink-600 text-lg font-semibold">
+            {{ cocktail.glass }}</span
           >
-        </p>
+        </div>
+        <div class="mb-4">
+          <span class="font-semibold text-lg text-pink-600">{{
+            cocktail.alcoholic
+          }}</span>
+        </div>
+        <div class="mb-4">
+          <div class="flex items-center mt-2 flex-wrap">
+            <a
+              class="bg-pink-800 rounded-md px-2 py-1 rounded text-m text-white m-1 hover:bg-pink-700 block w-fit"
+              *ngFor="let ingredient of cocktail.ingredients"
+              [routerLink]="['/ingredient', ingredient.split(' ').join('_')]"
+            >
+              {{ ingredient }}
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="text-gray-200 text-lg mt-2">
+            {{ cocktail.instructions }}
+          </p>
 
-        <h3 class="mt-8 text-lg font-semibold text-gray-900">Instructions</h3>
-        <p class="mt-4 text-lg text-gray-700">
-          {{ cocktail.instructions }}
-        </p>
+          <p class="text-gray-400 text-lg">
+            Click on any ingredient to know more about it.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>

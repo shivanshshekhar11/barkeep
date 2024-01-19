@@ -19,7 +19,7 @@ const routes: Route[] = [
     component: HomeComponent,
   },
   {
-    path: 'list',
+    path: 'list/:char',
     component: ListComponent,
   },
   {
